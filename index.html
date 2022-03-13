@@ -1,40 +1,63 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-	<title>Ghar Er Ranna Youtube Gallery</title>
+    <title>Ghar Er Ranna Youtube Gallery</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="UTF-8">
     <meta name="description" content="Bengali cooking is a style originating in Bengal region in the eastern part of the Indian, West Bengal. https://www.youtube.com/c/GharErRanna/">
     <meta name="keywords" content="EasyHomeRecipes,GharErRanna,OilFreeORLessOilRecipes,AMCCookwareUsed,BengaliStyle,HealthyandTastyRecipes,VegRecipes,NonVegRecipes,SnacksRecipes,HealthyYummyRiceRecipes,HealthyAndTastyVegetableRecipes,HealthyAndTastyVegRecipes ,BengaliStyleRecipeBiryani,BengaliStylePrawnRecipes,ChickenBengaliStyleRecipes,BengaliStyleVegetableRecipes ,MuttonKoshaBengaliStyleRecipe,EggRecipesBengaliStyle,FishRecipesBengaliStyle">
     <meta name="author" content="Surajit Mandal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Reference to html5gallery.js -->
-	<script type="text/javascript" src="html5gallery/html5gallery.js"></script>
+
+    <!-- style not required -->
+    <style type="text/css">
+        html{height:100%; background: #eee;}
+        h1{text-shadow: 0 2px 10px rgba(0,0,0,0.3); font-family: Georgia, "Times New Roman", Times, serif; color:#4A4C50; margin: 40px auto 6px auto; max-width: 960px; font-size: 34px; }
+        footer{ text-align:center; clear:both}
+        footer small{font-size:11px; font-family:Arial, Helvetica, sans-serif;padding:20px 0; display: inline-block; color: #838282;}
+        footer a{ color:#17728F; text-decoration:none}
+        footer a:hover{ color:#5A9DB3}
+    </style>
+
+    <!-- Darkscroll theme css -->
+    <link rel="stylesheet" href="css/darkscroll.css" />
+
+    <!-- Darkscroll Theme js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.spidochetube.js"></script>
+    <script>
+        jQuery(function($){
+            $('#youtube').spidochetube({
+                key         : 'AIzaSyArmuwfSaYXAdqjQ8JAJUV60Ll-gYt8c7o',
+                id          : 'PL-7v-0WCRc7G_qov0caysTIwrwygS2RG1',
+                max_results : 100,
+                complete    : function(){
+                    // Initialize the scroll plugin after the playlist is ready
+                    $('#spidochetube_list').niceScroll({
+                        cursorcolor  : '#666',
+                        cursorborder : '0px solid #fff',
+                        autohidemode : false
+                    });
+                }
+            });
+        })
+    </script>
 </head>
+
 <body>
-<!-- A wrapper DIV to center the Gallery -->
-<div style="text-align:center;">
 
-    <!-- Define the Div for Gallery -->
-    <!-- 1. Add class html5gallery to the Div -->
-    <!-- 2. Define parameters with HTML5 data tags -->
-	<div style="display:none;margin:0 auto;" class="html5gallery" data-skin="vertical" data-width="400" data-height="225" data-resizemode="fill">
-		<!-- Add Youtube video to Gallery -->
-		<a href="https://www.youtube.com/watch?v=kGg21z8jQmo"><img src="thumb/Macher-Matha-Diye-Moong-Dal.jpg" alt="Macher Matha Diye Moong Dal | Bengali Recipe | GharErRanna | Easy Home Recipe | Healthy Less Oil"></a>
-		<a href="https://www.youtube.com/watch?v=A8PvekEGyWc"><img src="thumb/Macher-Tok-Recipe.jpg" alt="Macher Tok | Sour Fish Curry Bengali Recipe | GharErRanna | Easy Home Recipe | Healthy Less Oil"></a>
-		<a href="https://www.youtube.com/watch?v=xvcLpv85Mso"><img src="thumb/Mocha-Chingri-Recipe.png" alt="Mocha Chingri | Mocha Chingri Bengali Recipe | GharErRanna | Easy Home Recipe | Healthy Less Oil"></a>
-		<a href="https://www.youtube.com/watch?v=cFvC5J5gJ-E"><img src="thumb/Lau-Posto-Recipe.png" alt="Lau Posto | Lau Posto Bengali Recipe | GharErRanna | Easy Home Recipe | Healthy Less Oil | লাউ পোস্ত"></a>
-		
-	</div>
+    <header>
+        <h1>Ghar Er Ranna Youtube Gallery</h1>
+    </header>
 
-</div>
+    <div id="youtube" class="spidochetube"></div>
 
-<style type="text/css">
-	div.guide {margin:12px 24px;}
-	div.guide span {color:#ff0000; font:italic 14px Arial, Helvetica, sans-serif;}
-	div.guide p {color:#000000; font:14px Arial, Helvetica, sans-serif;}
-	div.guide pre {color:#990000;}
-	div.guide p.title {color:#df501f; font:18px Arial, Helvetica, sans-serif;}
-</style>
+    <footer>
+        <small>
+            Made by <a href="https://www.youtube.com/c/GharErRanna/videos" title="Ghar Er Ranna Youtube Gallery">GharErRanna</a>
+        </small>
+    </footer>
+
 </body>
 </html>

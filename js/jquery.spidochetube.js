@@ -124,7 +124,7 @@
                 if(first_load === true){
                     var first_video_id = $('#spidochetube_list li:first-child a').attr('data-youtubeID');
                     var first_video_url = iframe_src(first_video_id, settings.autoplay, settings.theme);
-                    var iframe_html = '<iframe id="player" src="'+first_video_url+'" width="640" height="360" frameborder="0" allowfullscreen></iframe>';
+                    var iframe_html = '<iframe id="player" src="'+first_video_url+'" width="1002" height="564" frameborder="0" allowfullscreen></iframe>';
 
                     $('#spidochetube_list li:first-child').addClass('spidochetube_current');
 
